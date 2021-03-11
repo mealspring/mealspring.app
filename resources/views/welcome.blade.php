@@ -35,20 +35,18 @@
             
         </div>
         </nav>
-        <div class="columns is-centered" style="margin-top: 35px;">
+        <div class="columns is-centered" style="margin-top: 235px;">
             <div class="column is-half">
-                <div class="card">
-                    <div class="card-content" style="text-align: center;">
-                        <p class="title">
+              
+                        <p class="title" style="text-align: center;">
                             Welcome to the future home of <span style="color: green;">mealspring</span>
                         </p>
-                        <p class="subtitle">
+                        <p class="subtitle" style="text-align: center;">
                             <strong>A free, community-driven app for planning and sharing meals.</strong><br>
                         </p>
-                    </div>
+           
             </div>
         </div>
-    </div>
         
     <script>
         const burger = document.querySelector('#burger');
