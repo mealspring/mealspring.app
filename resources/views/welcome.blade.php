@@ -3,86 +3,59 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Manjari', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
+    <body style="font-family: 'Comfortaa', cursive;">
+        <nav class="navbar has-shadow is-white">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="{{ url('/home') }}">mealspring</a>
+                <a class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="navbar-menu" id="nav-links">
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class="navbar-end">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a class="navbar-item" href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a class="navbar-item" href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a class="navbar-item" href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
                 </div>
             @endif
-            <h1 style="display: block;"> Welcome to the future home of <span style="color: green;">mealspring</span></h1>
-            <strong>A free, community-centered app for planning and sharing meals.</strong><br>
             
         </div>
-    </body>
+        </nav>
+        <div class="columns is-centered" style="margin-top: 35px;">
+            <div class="column is-half">
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <p class="title">
+                            Welcome to the future home of <span style="color: green;">mealspring</span>
+                        </p>
+                        <p class="subtitle">
+                            <strong>A free, community-driven app for planning and sharing meals.</strong><br>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+        
+    <script>
+        const burger = document.querySelector('#burger');
+        const navbarMenu = document.querySelector('#nav-links'); 
+        burger.addEventListener('click', ()=>{
+            navbarMenu.classList.toggle('is-active');
+        })
+    </script>
+  </body>
 </html>
