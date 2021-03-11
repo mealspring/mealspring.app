@@ -35,7 +35,7 @@
             
         </div>
         </nav>
-        <div class="columns is-centered" style="margin-top: 235px;">
+        <div class="columns is-centered" style="margin-top: 20%;">
             <div class="column is-half">
               
                         <p class="title" style="text-align: center;">
