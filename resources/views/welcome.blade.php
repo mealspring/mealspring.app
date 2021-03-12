@@ -9,7 +9,7 @@
 
     </head>
     <body style="font-family: 'Comfortaa', cursive;">
-        <nav class="navbar has-shadow is-white">
+        <nav class="navbar has-shadow is-light">
             <div class="navbar-brand">
                 <a class="navbar-item" href="{{ url('/home') }}">mealspring</a>
                 <a class="navbar-burger" id="burger">
@@ -35,7 +35,7 @@
             
         </div>
         </nav>
-        <div class="columns is-centered" style="margin-top: 20%;">
+        <div class="columns is-centered" style="margin-top: 20%; min-height: 95vh;">
             <div class="column is-half">
               
                         <p class="title" style="text-align: center;">
@@ -47,13 +47,6 @@
            
             </div>
         </div>
-        
-    <script>
-        const burger = document.querySelector('#burger');
-        const navbarMenu = document.querySelector('#nav-links'); 
-        burger.addEventListener('click', ()=>{
-            navbarMenu.classList.toggle('is-active');
-        })
-    </script>
+        <script src="{{ asset('js/nav.js') }}" defer></script>
   </body>
 </html>

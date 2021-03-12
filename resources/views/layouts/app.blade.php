@@ -18,7 +18,7 @@
 </head>
 <body style="font-family: 'Comfortaa', cursive;">
     <div id="app">
-        <nav class="navbar has-shadow is-white">
+        <nav class="navbar has-shadow is-light">
             <div class="navbar-brand">
                 <a class="navbar-item" href="{{ url('/home') }}">mealspring</a>
                 <a class="navbar-burger" id="burger">
@@ -58,5 +58,6 @@
                 @yield('content')
             </main>     
     </div>
+    <script src="{{ asset('js/nav.js') }}" defer></script>
 </body>
 </html>
