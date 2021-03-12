@@ -14,12 +14,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
-<body>
+<body style="font-family: 'Comfortaa', cursive;">
     <div id="app">
         <nav class="navbar has-shadow is-white">
             <div class="navbar-brand">
-                <a class="navbar-item"><img src="{{ asset('images/ms-logo.png') }}" style="min-height: 65px;"></a>
+                <a class="navbar-item" href="{{ url('/home') }}">mealspring</a>
                 <a class="navbar-burger" id="burger">
                     <span></span>
                     <span></span>
@@ -53,18 +54,9 @@
         </nav>
 
 
-            <main class="py-4">
+            <main>
                 @yield('content')
-            </main>
-    <script>
-        const burger = document.querySelector('#burger');
-        const navbarMenu = document.querySelector('#nav-links'); 
-        burger.addEventListener('click', ()=>{
-            navbarMenu.classList.toggle('is-active');
-        })
-    </script>
-    
-                
+            </main>     
     </div>
 </body>
 </html>
