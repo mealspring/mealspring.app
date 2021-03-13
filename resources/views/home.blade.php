@@ -1,5 +1,4 @@
 
-// this a users dashboard -- it will display a feed, upcoming meals etc.
 @extends('layouts.app')
 
 @section('content')
