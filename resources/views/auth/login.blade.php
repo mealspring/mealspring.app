@@ -9,6 +9,7 @@
             <div class="control has-icons-left">
                 
               <input class = "input is-primary @error('email') input is-danger @enderror" 
+                id = "email"
                 type="email" 
                 placeholder="Email input" 
                 name="email" 

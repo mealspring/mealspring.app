@@ -1,3 +1,5 @@
+
+// this a users dashboard -- it will display a feed, upcoming meals etc.
 @extends('layouts.app')
 
 @section('content')
@@ -14,7 +16,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }} jjdsjdasdksdjsad
+                    {{ __('You are logged in!') }} 
                 </div>
             </div>
         </div>
