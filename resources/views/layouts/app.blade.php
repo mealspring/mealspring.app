@@ -49,14 +49,14 @@
                     @endguest
                 </div>
             @endif
-            
         </div>
         </nav>
 
-
+        
             <main>
                 @yield('content')
             </main>     
+            <example-component></example-component>
     </div>
     <script src="{{ asset('js/nav.js') }}" defer></script>
 </body>
